@@ -6,3 +6,8 @@ Library
 Logs
 Temp
 UserSettings
+obj
+.idea
+.vs
+.vscode
+.vsconfig
