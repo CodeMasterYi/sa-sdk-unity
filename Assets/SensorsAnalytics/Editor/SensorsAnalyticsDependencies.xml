@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="com.sensorsdata.analytics.android:SensorsAnalyticsSDK:6.8.2" />
+    </androidPackages>
+    <iosPods>
+        <iosPod name="SensorsAnalyticsSDK" version="4.8.2" subspecs="['DISABLE_UIWEBVIEW']" />
+    </iosPods>
+</dependencies>
