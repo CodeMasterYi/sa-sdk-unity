@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System.IO;
+using UnityEditor.Android;
 
-public class SAAndroidPostProcessor : MonoBehaviour
+public class SAAndroidPostProcessor : IPostGenerateGradleAndroidProject
 {
-    // Start is called before the first frame update
-    void Start()
+    public int callbackOrder
     {
-        
+        get
+        {
+            return 1;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPostGenerateGradleAndroidProject(string path)
     {
-        
+        //string appBuildGradleFile = path + "/app/build.gradle";
+        //if (File.Exists(appBuildGradleFile))
+        //{
+        //    string appBuildGradle = File.ReadAllText(appBuildGradleFile);
+        //    appBuildGradle = appBuildGradle.Replace("minSdkVersion 15", "minSdkVersion 19");
+        //    File.WriteAllText(appBuildGradleFile, appBuildGradle);
+        //}
     }
 }
